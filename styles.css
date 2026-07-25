@@ -513,6 +513,17 @@ svg.fill { fill: currentColor; stroke: none; }
   font-size: .84rem; color: var(--text-3); font-style: italic; margin-bottom: 14px;
 }
 .paper > div > p { color: var(--text-2); font-size: .94rem; margin-bottom: 16px; line-height: 1.68; }
+.paper-cta { margin-top: 16px; margin-bottom: 0 !important; }
+.paper-cta a {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: .875rem; font-weight: 500; color: var(--accent);
+  padding: 7px 14px; border: 1px solid var(--accent-line); border-radius: 9px;
+  transition: background .2s var(--ease), transform .18s var(--ease);
+}
+.paper-cta a svg { width: 15px; height: 15px; }
+.paper-cta a span { transition: transform .2s var(--ease); }
+.paper-cta a:hover { background: var(--accent-dim); transform: translateY(-1px); }
+.paper-cta a:hover span { transform: translateX(3px); }
 @media (max-width: 680px) { .paper { grid-template-columns: 1fr; gap: 12px; padding: 24px; } }
 
 /* ---------- stack ---------- */
